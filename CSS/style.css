@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  background-color: #a19695;
+  align-items: center; 
+}
+
+.encabesado{
+  margin-top: 20%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex: 1; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 70%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+
+.boton-anterior,
+.boton-siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.boton-anterior {
+  left: 10px;
+}
+
+.boton-siguiente {
+  right: 10px;
+}
+
+.boton-anterior:hover,
+.boton-siguiente:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  margin-top: auto; 
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
